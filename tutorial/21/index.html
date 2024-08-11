@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity</title>
+    <style>
+      /* 1 */
+      h1 {
+        color: aqua;
+      }
+
+      /* 10 */
+      .yellow {
+        color: yellow;
+      }
+
+      /* 1+10=11 */
+      h1.cred {
+        color: red;
+      }
+
+      /* 10 */
+      .cpurple {
+        color: purple;
+      }
+
+      /* 1+10+10+10+10=41 */
+
+      a.classone.classtwo[href]:hover {
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="yellow cred cpurple">CSS Specificity</h1>
+    <!-- 
+    Cascade algorithm
+    1. position and order of the css properties
+    2. specificity :inline<ID selector<class or atribute selector<element selector<universal selector
+    3. orgin
+    4.important
+
+    specificity calculation:
+    1. universal:0
+    2. element and psuedo:1
+    3. class,atrr, psedo class:10
+    4. ID: 100
+    5. inline:1000
+    6. !important:10,000
+    
+    -->
+  </body>
+</html>
