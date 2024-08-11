@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Size units</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        border: 2px solid black;
+        /* width: 233px; */
+        width: 80vw;
+        margin: auto;
+        height: 10vh;
+        background-color: aquamarine;
+      }
+
+      .container {
+        border: 2px solid black;
+        /* width: 233px; */
+        width: 80vw;
+        /* height: 80vh; */
+        min-height: 80vh;
+        margin: 23px auto;
+        background-color: aquamarine;
+        font-size: 16px;
+        overflow: hidden;
+      }
+
+      .container p {
+        /* 1em = 1x inherit from parent */
+        /* 1rem = 1x inherit from root */
+        font-size: 2em;
+        border: 2px solid red;
+        width: 50%;
+      }
+
+      .con {
+        box-sizing: border-box;
+        margin: 23px auto;
+        border: 2px solid black;
+        color: #000;
+        font-size: 22px;
+        /* width: 100vmin; */
+        width: 80vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">its a box</div>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit beatae
+        harum odit vero officiis asperiores, nulla ad? Quos, nemo hic in quasi
+        earum dolores quidem laborum, at minus ut voluptatem rem. Harum, quos ea
+        ab assumenda excepturi eveniet eaque voluptatem consequuntur vitae
+        magnam? Itaque accusamus commodi molestias ut vel, quas reprehenderit
+        porro, minima, ipsa necessitatibus saepe!
+      </p>
+    </div>
+
+    <div class="con">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos voluptates,
+      doloremque dolore ab suscipit nesciunt cum ducimus consectetur in, iste ex
+      fuga architecto aliquam. Minus fugiat, laudantium ipsa aliquam nisi
+      necessitatibus nulla neque odio illum, nihil, magni amet doloremque
+      recusandae vero consequuntur dolore. Cumque facilis aperiam unde eos ex
+      officiis, ab iure quo sequi tempora nemo?
+    </div>
+  </body>
+</html>
